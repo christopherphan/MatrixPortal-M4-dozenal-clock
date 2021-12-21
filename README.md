@@ -36,14 +36,14 @@ convention that I actually used on the clock.)
 |       0 |       0 |
 |       1 |       1 |
 |       2 |       2 |
-|        |        |
+|     ... |     ... |
 |       9 |       9 |
 |      10 |       X |
 |      11 |       E |
 |      12 |      10 |
 |      13 |      11 |
 |      14 |      12 |
-|        |        |
+|     ... |     ... |
 |      19 |      17 |
 |      20 |      18 |
 |      21 |      19 |
@@ -51,11 +51,11 @@ convention that I actually used on the clock.)
 |      23 |      1E |
 |      24 |      20 |
 |      25 |      21 |
-|        |        |
+|     ... |     ... |
 |     143 |      EE |
 |     144 |     100 |
 |     145 |     101 |
-|        |        |
+|     ... |     ... |
 
 ### Rationale for dozenal
 
