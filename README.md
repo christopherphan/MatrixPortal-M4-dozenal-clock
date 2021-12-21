@@ -1,5 +1,6 @@
 # MatrixPortal-M4-dozenal-clock
 Configure the MatrixPortal-M4 to display a digital clock with decimal and dozenal (base-12) time
+
 *Note: This README is not finished.*
 
 A few months ago, I bought a
