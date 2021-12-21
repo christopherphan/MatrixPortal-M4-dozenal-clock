@@ -107,4 +107,10 @@ is the set of Pitman digits, which resemble the digits 2 and 3, rotated
 TWO)](https://codepoints.net/U+218A) and [U+218B (TURNED
 DIGIT THREE)](https://codepoints.net/U+218B). Font support remains very spotty, although
 Google's [Noto Sans Symbols](https://fonts.google.com/noto/specimen/Noto+Sans+Symbols)
-font has them.
+font has them:
+
+![Dozenal digits in Noto Sans and Noto Sans Symbols](dozenal_digits.png)
+
+I use Pitman digits on my clock.
+
+(To be continued . . . )
