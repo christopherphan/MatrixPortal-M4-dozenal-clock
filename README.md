@@ -20,7 +20,20 @@ to build the Matrixportal-M4. (My code is designed to run on a 32 × 16 LED matr
 instructions](https://learn.adafruit.com/network-connected-metro-rgb-matrix-clock/install-circuitpython-2)
 to install CircutPython on the MatrixPortal.
 
-3. Copy the files in the directory `copy_to_board` of this repo onto the MatrixPortal.
+3. Follow [Adafruit's instructions](https://learn.adafruit.com/adafruit-matrixportal-m4/internet-connect) to create a `secrets.py`. It should look something like this:
+    ~~~~python
+    secrets = {
+        "ssid": "WIFI_NETWORK_NAME",
+        "password": "WIFI_NETWORK_PASSWORD",
+        "timezone": "America/Chicago",
+        "aio_username": "AIO_USERNAME",
+        "aio_key": "AIO_KEY"
+    }
+    ~~~~
+    We are using the [Adafruit IO](https://io.adafruit.com) service to get the time, so
+    you'll need to have an account there.
+
+4. Copy the files in the directory `copy_to_board` of this repo onto the MatrixPortal.
 
 ## Dozenal time
 
