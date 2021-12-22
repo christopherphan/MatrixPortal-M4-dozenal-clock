@@ -111,7 +111,9 @@ centimeter is 10<sup>-2</sup> meters. Several systems have been created to mimic
 base 12, and one such is the [Tim-Grafut-Maz (TGM)
 system](http://www.dozenal.org/drupal/content/tgm-coherent-dozenal-metrology.html)
 designed by Tom Pendlebury. In the TGM system, the basic unit of time is the Tim, which is
-12<sup>-4</sup> hours = 25/144 seconds.
+12<sup>-4</sup> hours = 25/144 seconds. (Tim is also, amusingly, my
+[father-in-law's](https://web.engr.oregonstate.edu/~budd/) first
+name.)
 
 When I first learned this, I wondered why the basic unit of time was based on an hour, and
 not a day. But once you look at [a dozenal
