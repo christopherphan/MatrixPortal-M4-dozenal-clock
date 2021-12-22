@@ -116,7 +116,10 @@ clock](https://chrisphan.com/misc/dozenal_clock_simple/index.html), you see why:
 
 ![Dozenal analog clock](dozenal_analog_clock.png)
 
-If you focus on the hour (12<sup>4</sup> Tims) and the unciahour (1/12 hour = 12<sup>3</sup> Tims), you can use a traditional clock.
+If you focus on the hour (12<sup>4</sup> Tims) and the unciahour (1/12 hour =
+12<sup>3</sup> Tims), you can use a traditional clock.
+
+### Dozenal time on my clock
 
 My clock displays the time in hours since midnight in dozenal on the second line.
 
@@ -128,4 +131,12 @@ The radix separator `;` blinks and was not when this image was taken. The time d
 using `X` and `E` instead of the Pitman digits, is `0E;883`. This means the current time
 is 11 + 8/12 + 8/144 + 3/1728 hours past midnight.
 
-*More to come...*
+## ISO Week-date Calendar
+
+*Coming soon...*
+
+## Font
+
+![Characters in `chris_6x5.bdf`](alphabet.svg)
+
+*Coming soon...*
