@@ -1,7 +1,7 @@
 # MatrixPortal-M4-dozenal-clock
 Configure the MatrixPortal-M4 to display a digital clock with decimal and dozenal (base-12) time
 
-*Note: This README is not finished.*
+## Introduction
 
 A few months ago, I bought a
 [MatrixPortal-M4](https://learn.adafruit.com/adafruit-matrixportal-m4) and LED matrix
@@ -37,6 +37,9 @@ to install CircutPython on the MatrixPortal.
     you'll need to have an account there.
 
 4. Copy the files in the directory `copy_to_board` of this repo onto the MatrixPortal.
+
+The rest of this document describes the Dozenal time display as well as some details the
+code.
 
 ## Dozenal time
 
@@ -131,12 +134,31 @@ The radix separator `;` blinks and was not when this image was taken. The time d
 using `X` and `E` instead of the Pitman digits, is `0E;883`. This means the current time
 is 11 + 8/12 + 8/144 + 3/1728 hours past midnight.
 
-## ISO Week-date Calendar
+## ISO week date Calendar
 
-*Coming soon...*
+The third line of text on the display shows the date, rotating between different formats.
+One such is [the ISO week date calendar](https://en.wikipedia.org/wiki/ISO_week_date) (the
+year is omitted). It's typically easy to produce the ISO week date in Python because the
+functionality is in the standard library (e.g.
+[`datetime.date.isocalendar`](https://docs.python.org/3/library/datetime.html#datetime.date.isocalendar)).
+However, CircuitPython does not implement these, so I had to reimplement the functionality
+(`dozenal_circuit.py`).
 
 ## Font
 
+To print text on the LED matrix, you can use a font in the (ancient) `bdf` format. This
+format is actually pretty intuitive, and Adafruit provides [a neat
+tutorial](https://learn.adafruit.com/network-connected-metro-rgb-matrix-clock/custom-font)
+on how the format works.
+
+To fit three lines of information on a 32 × 16 screen, I created a typeface
+(`chris_6x5.bdf`) in which the digits (`0`-`9`, U+218A, and U+218B), the punctuation marks
+`-`, `;`, and `:`, as well as the space take up a 4 × 5 space, and the letters `M`, `T`,
+`W`, `F`, `S`, `a`, `h`, and `u` take up a 6 × 5 space. (Those are the only characters
+implemented, and allow us to abbreviate the days of the week as `M`, `Tu`, `W`, `Th`, `F`,
+`Sa`, and `Su`. The `W` (for "week") is also used in the ISO week date format.)
+
 ![Characters in `chris_6x5.bdf`](alphabet.svg)
 
-*Coming soon...*
+In the directory `font_source` is a text file with ASCII art versions of the characters,
+as well as a Python script to convert this into a `bdf` file.
