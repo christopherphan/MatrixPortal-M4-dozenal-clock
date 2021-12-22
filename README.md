@@ -43,13 +43,13 @@ to install CircutPython on the MatrixPortal.
 ### Dozenal numbers
 
 Dozenal is another name for the base-12 number system, in contract to the decimal
-(base-10) system that is typically used. One convention is to use the characters X and E
-to represent digits for 10 and 11, respectively. (Later, we will discuss a different
+(base-10) system that is typically used. One convention is to use the characters `X` and
+`E` to represent digits for 10 and 11, respectively. (Later, we will discuss a different
 convention that I actually used on the clock.)
 
 ~~~~
-Decimal:  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
-Dozenal:  0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  X,  E, 10, 11, 12, 13, 14, 15, 16, 17, 
+Decimal:  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+Dozenal:  0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  X,  E, 10, 11, 12, 13, 14, 15, 16, 17,
 
 Decimal: 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39...
 Dozenal: 18, 19, 1X, 1E, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2X, 2E, 30, 31, 32, 33...
@@ -82,12 +82,13 @@ decimal expansions.
 | 1/11             | 0.0909090909...   | 0;111111111...    |
 | 1/12             | 0.0833333333...   | 0;1               |
 
-(In this table, we use X to represent 10, E to represent 11, and ; as a radix separator.)
+(In this table, we use `X` to represent 10, `E` to represent 11, and `;` as a radix
+separator.)
 
-## Pitman notation
+### Pitman notation
 
-Above, I used the digit X to represent 10 and E to represent 11. Another common notation
-is the set of Pitman digits, which resemble the digits 2 and 3, rotated
+Above, I used the digit `X` to represent 10 and `E` to represent 11. Another common
+notation is the set of Pitman digits, which resemble the digits 2 and 3, rotated
 180°. These are in Unicode at codepoints [U+218A (TURNED DIGIT
 TWO)](https://codepoints.net/U+218A) and [U+218B (TURNED
 DIGIT THREE)](https://codepoints.net/U+218B). Font support remains very spotty, although
@@ -98,4 +99,33 @@ font has them:
 
 I use Pitman digits on my clock.
 
-(To be continued . . . )
+### Dozenal unit of time: Tim
+
+The most common system of units in use today is the International System of Units, more
+commonly known as the metric system. In the metric system, various units of the same
+type differ by a factor of a power of 10, e.g. a kilogram is 10<sup>3</sup> grams and a
+centimeter is 10<sup>-2</sup> meters. Several systems have been created to mimic this in
+base 12, and one such is the [Tim-Grafut-Maz (TGM)
+system](http://www.dozenal.org/drupal/content/tgm-coherent-dozenal-metrology.html)
+designed by Tom Pendlebury. In the TGM system, the basic unit of time is the Tim, which is
+12<sup>-4</sup> hours = 25/144 seconds.
+
+When I first learned this, I wondered why the basic unit of time was based on an hour, and
+not a day. But once you look at [a dozenal
+clock](https://chrisphan.com/misc/dozenal_clock_simple/index.html), you see why:
+
+![Dozenal analog clock](dozenal_analog_clock.png)
+
+If you focus on the hour (12<sup>4</sup> Tims) and the unciahour (1/12 hour = 12<sup>3</sup> Tims), you can use a traditional clock.
+
+My clock displays the time in hours since midnight in dozenal on the second line.
+
+![Photo of the completed clock](clock_picture.jpg)
+
+![Face of clock](sign.svg)
+
+The radix separator `;` blinks and was not when this image was taken. The time displayed,
+using `X` and `E` instead of the Pitman digits, is `0E;883`. This means the current time
+is 11 + 8/12 + 8/144 + 3/1728 hours past midnight.
+
+*More to come...*
