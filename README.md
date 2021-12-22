@@ -47,31 +47,16 @@ Dozenal is another name for the base-12 number system, in contract to the decima
 to represent digits for 10 and 11, respectively. (Later, we will discuss a different
 convention that I actually used on the clock.)
 
-| Decimal | Dozenal |
-| ------: | ------: |
-|       0 |       0 |
-|       1 |       1 |
-|       2 |       2 |
-|     ... |     ... |
-|       9 |       9 |
-|      10 |       X |
-|      11 |       E |
-|      12 |      10 |
-|      13 |      11 |
-|      14 |      12 |
-|     ... |     ... |
-|      19 |      17 |
-|      20 |      18 |
-|      21 |      19 |
-|      22 |      1X |
-|      23 |      1E |
-|      24 |      20 |
-|      25 |      21 |
-|     ... |     ... |
-|     143 |      EE |
-|     144 |     100 |
-|     145 |     101 |
-|     ... |     ... |
+~~~~
+Decimal:  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+Dozenal:  0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  X,  E, 10, 11, 12, 13, 14, 15, 16, 17, 
+
+Decimal: 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39...
+Dozenal: 18, 19, 1X, 1E, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2X, 2E, 30, 31, 32, 33...
+
+Decimal: ... 142, 143, 144, 145, 146, 147, ...
+Dozenal: ...  EX,  EE, 100, 101, 102, 103, ...
+~~~~
 
 ### Rationale for dozenal
 
